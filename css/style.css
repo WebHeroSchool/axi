@@ -5,13 +5,11 @@
 }
 .header {
 	display: flex;
-	position: absolute;
 	max-width: 1030px;
 	height: 65px;
 }
 
 .logo {
-	display: flex;
 	width: 55px;
 	height: 55px;
 	background: url(../images/Axion-logo-1.png) no-repeat 100% 100%;
@@ -49,7 +47,7 @@
 	display: flex;
 	width: 154px;
 	align-items: center;
-	padding-left: 215px;
+	padding-right: 70px;
 }
 
 .form__button {
