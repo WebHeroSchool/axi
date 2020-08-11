@@ -2,7 +2,7 @@
 .container {
 	max-width: 1170px;
 	min-width: 320px;
-	margin: 0 5.3% 0;
+	margin: 32.46px 5.3% 0;
 }
 .header {
 	display: flex;
@@ -20,7 +20,7 @@
 .nav {
 	display: flex;
 	align-items: center;
-	padding-left: 2.5%;
+	padding-left: 4%;
 }
 
 
@@ -56,7 +56,7 @@
 .form__input {
 	border: none;
 	border-bottom: 1px solid;
-	max-width: 177px;
+	max-width: 175px;
 }
 
 .form__button {
@@ -94,13 +94,63 @@
 	display: none;
 }
 
+.main {
+	height: 280px;
+	background: url(../images/rob-potter-422534-unsplash.svg) 100%;
+	width: 1030px;
+	background-size: cover;
+	margin-top: 29px;
+}
+
+.main__title {
+	position: absolute;
+	top: 180px;
+	left: 10.5%;
+	font-family: Gotham Pro;
+	width: 195px;
+	height: 86.94px;
+	color: #fff;
+	font-size: 30px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	text-transform: uppercase;
+}
+
+.main__link {
+	position: absolute;
+	top: 308.74px;
+	left: 10.5%;
+	text-decoration: none;
+	color: #fff;
+	font-family: Gotham Pro;
+	font-size: 12px;
+	line-height: 11px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	text-transform: uppercase;
+}
+
+.main__link::after {
+	content: '';
+}
+
 @media all and (max-width: 1170px) {
 	.logo {
 		min-width: 61.03px;
 		}
+
+	.main {
+		min-height: 253px;
+	}
 }
 
 @media all and (max-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
 
 	.header {
 		height: 113px;
@@ -112,7 +162,6 @@
 		min-width: 156px;
 		background: url(../images/Axion-logo-1.svg) no-repeat 100%;
 		background-size: cover;
-
 	}
 
 	.nav {
@@ -129,10 +178,8 @@
 		display: block;
 		margin-left: auto;
 		margin-top: 35px;
-		margin-right: 20%;
-		float: right;
 		width: 6%;
-		height: 22%;
+		height: 25px;
 		z-index: 1;
 		border: none;
 		background: #fff;
@@ -155,5 +202,11 @@
 
 	.language {
 		display: none;
+	}
+	.main {
+		height: 415px;
+		background: url(../images/rob-potter-422534-unsplash.svg) no-repeat center;
+		background-size: cover;
+		margin: 0;
 	}
 }
