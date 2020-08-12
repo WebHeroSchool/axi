@@ -20,6 +20,7 @@
 .nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding-left: 4%;
 }
 
@@ -134,7 +135,29 @@
 }
 
 .main__link::after {
-	content: '';
+	display: block;
+	content: '\2192';
+	padding: 5px;
+}
+
+.product {
+	max-width: 1030px;
+}
+
+.product__title {
+	flex-direction: row;
+	font-family: Gotham Pro;
+	font-size: 22px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.product__card {
+	display: flex;
+	justify-content: space-between;
 }
 
 @media all and (max-width: 1170px) {
