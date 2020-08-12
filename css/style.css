@@ -155,9 +155,35 @@
 	text-transform: uppercase;
 }
 
-.product__card {
+.product__cards {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.name {
+	font-family: 'Gotham Pro';
+	font-size: 12px;
+	line-height: 11px;
+	font-style: 500;
+	font-weight: normal;
+}
+
+.price {
+	font-family: 'Gotham Pro';
+	font-size: 14px;
+	line-height: 13px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.product__line {
+	display: flex;
+	justify-content: space-between;
+	width: 0px;
+	height: 100.18px;
+	opacity: 0.2;
+	border: 1px solid #000;
 }
 
 @media all and (max-width: 1170px) {
