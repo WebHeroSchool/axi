@@ -1,8 +1,10 @@
-
+body {
+	margin: 0;
+}
 .container {
 	max-width: 1170px;
 	min-width: 320px;
-	margin: 32.46px 5.3% 0;
+	margin: 32.46px 6% 0;
 }
 .header {
 	display: flex;
@@ -106,7 +108,7 @@
 .main__title {
 	position: absolute;
 	top: 180px;
-	left: 10.5%;
+	left: 11.5%;
 	font-family: Gotham Pro;
 	width: 195px;
 	height: 86.94px;
@@ -119,38 +121,39 @@
 	text-transform: uppercase;
 }
 
-.main__link {
+.main__subtitle {
 	position: absolute;
-	top: 308.74px;
-	left: 10.5%;
-	text-decoration: none;
+	margin-left: 6.5%;
+	top: 300px;
+	margin-left: 6%;
+	padding-right: 25px;
 	color: #fff;
 	font-family: Gotham Pro;
 	font-size: 12px;
 	line-height: 11px;
-	display: flex;
-	align-items: center;
-	text-align: justify;
 	text-transform: uppercase;
 }
 
-.main__link::after {
-	display: block;
-	content: '\2192';
-	padding: 5px;
+.main__link {
+	position: absolute;
+	margin-left: 13.5%;
+	top: 307px;
+	text-decoration: none;
+	color: #fff;
+	transform: scaleX(2.5);
 }
 
 .product {
+	margin-top: 50px;
 	max-width: 1030px;
 }
 
 .product__title {
-	flex-direction: row;
 	font-family: Gotham Pro;
 	font-size: 22px;
 	line-height: 21px;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	text-transform: uppercase;
 }
@@ -186,6 +189,40 @@
 	border: 1px solid #000;
 }
 
+.black {
+	display: flex;
+	align-items: center;
+	background-color: #000;
+	height: 494px;
+}
+
+.title {
+	font-family: Gotham Pro;
+	font-size: 22px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.title_black {
+	color: #fff;
+}
+
+.paragraph_black {
+	font-family: Gotham Pro;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 500;
+	font-style: normal;
+	color: #fff;
+}
+
+.stories {
+	display: flex;
+}
+
 @media all and (max-width: 1170px) {
 	.logo {
 		min-width: 61.03px;
@@ -196,9 +233,9 @@
 	}
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 768px) {
 	.container {
-		max-width: 1024px;
+		max-width: 768px;
 	}
 
 	.header {
@@ -253,9 +290,53 @@
 		display: none;
 	}
 	.main {
+		width: 1526px;
 		height: 415px;
+		margin-left: -127px;
 		background: url(../images/rob-potter-422534-unsplash.svg) no-repeat center;
 		background-size: cover;
-		margin: 0;
+	}
+
+	.product {
+		min-width: 768px;
+		margin: 0 70px 0;
+	}
+
+	.product__title {
+		font-size: 30px;
+		line-height: 29px;
+	}
+
+	.product__cards {
+		margin-left: 100px;
+		min-width: 627px;
+	}
+
+	.product__block {
+		width: 352px;
+		height: 280px;
+	}
+
+	.product__block img{
+		min-width: 229px;
+		min-height: 233px;
+	}
+
+	.name {
+		font-size: 20px;
+		line-height: 19px;
+	}
+
+	.price {
+		font-size: 25px;
+		line-height: 24px;
+	}
+
+	.product__block_tablet {
+		display: none;
+	}
+
+	.product__line {
+		display: none;
 	}
 }
