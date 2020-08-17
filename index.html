@@ -24,10 +24,10 @@
         <input name="s" type="search" class="form__input"/>
         <button type="submit" class="form__button"><img src="images/search.png"/></button>
       </form>
-      <nav class="nav">
-        <a href="#" class="nav__link">Sign in</a>
-        <a href="#" class="nav__link">Cart</a>
-        <img src="images/Group 2.png" class="nav__img"/>
+      <nav class="member">
+        <a href="#" class="member__link">Sign in</a>
+        <a href="#" class="member__link">Cart</a>
+        <img src="images/Group 2.png" class="member__img"/>
       </nav>
       <div class="language">
         <button type="submit" class="language__button"></button>
@@ -35,8 +35,9 @@
     </header>
     <section class="main">
       <h1 class="main__title">Legendary footwear reborn.</h1>
-      <p class="main__subtitle">Shop now</p>
-      <a href="#" class="main__link">&rarr;</a>
+      <div class="main__subtitle">
+        <p class="subtitle-text">Shop now</p>
+        <a href="#" class="subtitle-link">&rarr;</a>
     </section>
     <section class="product">
       <h2 class="product__title">Featured product</h2>
@@ -98,37 +99,46 @@
       <div class="stories__block">
         <div class="stories-card">
           <img src="images/Rectangle 3.71.jpg"/>
-          <h3 class="heading">Presents Justin Anagoa</h3>
-          <p class="paragraph">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</p>
-          <a href="#" class="learnmore">Learn more </a>
-          <time datetime="2018-08-11" class="date">11.08.2018</time>
+          <h3 class="stories-card__heading">Presents Justin Anagoa</h3>
+          <p class="stories-card__paragraph">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</p>
+          <div class="stories-card__postparagraph">
+            <p class="learnmore">Learn more </p>
+            <a href="#">&rarr;</a>
+            <time datetime="2018-08-11" class="date">11.08.2018</time>
+          </div>
         </div>
-        <div class="stories-card">
+        <div class="stories-card stories-card_mobile">
           <img src="images/Rectangle 3.72.jpg"/>
-          <h3 class="heading">First Frontside flip</h3>
-          <p class="paragraph">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. Photo:Yoon Sul</p>
-          <a href="#" class="learnmore">Learn more</a>
-          <time datetime="2018-08-17" class="date">17.08.2018</time>
+          <h3 class="stories-card__heading">First Frontside flip</h3>
+          <p class="stories-card__paragraph">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. Photo:Yoon Sul</p>
+          <div class="stories-card__postparagraph">
+            <p class="learnmore">Learn more</p>
+            <a href="#">&rarr;</a>
+            <time datetime="2018-08-17" class="date">17.08.2018</time>
+          </div>
         </div>
-        <div class="stories-card">
+        <div class="stories-card stories-card_tablet">
           <img src="images/Rectangle 3.73.jpg"/>
-          <h3 class="heading">Kevin Baekkel is Pro</h3>
-          <p class="paragraph">Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.</p>
-          <a href="#" class="learnmore">Learn more</a>
-          <time datetime="2018-07-29" class="date">29.07.2018</time>
+          <h3 class="stories-card__heading">Kevin Baekkel is Pro</h3>
+          <p class="stories-card__paragraph">Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.</p>
+          <div class="stories-card__postparagraph">
+            <p class="learnmore">Learn more</p>
+            <a href="#">&rarr;</a>
+            <time datetime="2018-08-17" class="date">17.08.2018</time>
+          </div>
         </div>
       </div>
     </section>
     <section class="gallery">
       <p class="gallery__paragraph">#AXIONfootwear</p>
-      <div>
-        <img src='#' class="gallery__img"/>
-        <img src='#' class="gallery__img"/>
-        <img src='#' class="gallery__img"/>
-        <img src='#' class="gallery__img"/>
-        <img src='#' class="gallery__img"/>
-        <img src='#' class="gallery__img"/>
-        <img src='#' class="gallery__img"/>
+      <div class="gallery__img">
+        <img src="images/Rectangle 31.jpg"/>
+        <img src="images/Rectangle 32.jpg"/>
+        <img src="images/Rectangle 33.jpg"/>
+        <img src="images/Rectangle 34.jpg"/>
+        <img src="images/Rectangle 35.jpg"/>
+        <img src="images/Rectangle 36.jpg"/>
+        <img src="images/Rectangle 37.jpg"/>
       </div>
     </section>
     <footer class="footer">
@@ -154,18 +164,17 @@
         <a href="#" class="link">About Us</a>
         <a href="#" class="link">Careers</a>
         <a href="#" class="link">Privacy Policy</a>
-        <a href="#" class="link"></a>
-        <a href="#" class="link"></a>
-        <a href="#" class="link"></a>
+        <a href="#" class="link">Terms & Conditions</a>
+        <a href="#" class="link">Ethical Policy</a>
+        <a href="#" class="link">Homepage US/UK</a>
       </nav>
       <div class="footer__signup">
         <a href="#" class="link link_big">NEWSLETTER SIGN UP</a>
         <a href="#" class="link">Get 10% Off Your Next Order!</a>
         <button class="footer__signup footer__signup_btn">Sign in</button>
-        <img src="#"/>
-        <img src="#"/>
-        <img src="#"/>
-        <img src="#"/>
+        <div class="social">
+          <img src="images/social.png"/>
+        </div>
       </div>
       <p class="footer__copywrite">© 2019 Axion. All rights reserved.</p>
     </footer>
