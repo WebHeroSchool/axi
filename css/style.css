@@ -1,11 +1,9 @@
-body {
-	margin: 0;
-	max-width: 1170px;
-}
 .container {
-	max-width: 1030px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	min-width: 320px;
-	margin: 32.46px 6vw 0;
+	margin: 32.46px 6vw 0 6vw;
 }
 .header {
 	display: flex;
@@ -78,6 +76,9 @@ body {
 	white-space: pre;
 	margin-left: 3vw;
 }
+.member__img {
+	padding-left: 3px;
+}
 
 .language {
 	display: flex;
@@ -104,7 +105,7 @@ body {
 .main {
 	height: 280px;
 	background: url(../images/rob-potter-422534-unsplash.svg) 100%;
-	width: 1030px;
+	width: 88vw;
 	background-size: cover;
 	margin-top: 29px;
 	display: flex;
@@ -136,6 +137,7 @@ body {
 	font-family: Gotham Pro;
 	font-size: 12px;
 	line-height: 11px;
+	text-decoration: none;
 	text-transform: uppercase;
 }
 
@@ -148,7 +150,7 @@ body {
 
 .product {
 	margin-top: 50px;
-	max-width: 1030px;
+	max-width: 88vw;
 }
 
 .product__title {
@@ -176,11 +178,70 @@ body {
 }
 
 .price {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	min-width: 19.7vw;
+}
+
+.price__title {
+	margin: 0;
 	font-family: 'Gotham Pro';
 	font-size: 14px;
 	line-height: 13px;
 	font-style: normal;
 	font-weight: bold;
+}
+
+.price__circles {
+	display: flex;
+	width: 49px;
+	height: 10px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.circle {
+	border-radius: 50%;
+	height: 7px;
+	width: 7px;
+	background: #C4C4C4;	
+}
+
+.circle_black {
+	height: 9px;
+	width: 9px;
+	background: #000;
+}
+
+.circle_red {
+	background: #B62E3C;
+}
+
+.circle_yellow {
+	background: #FDB431;
+}
+
+.circle_orange {
+	height: 9px;
+	width: 9px;
+	background: #E29D69;
+}
+
+.circle_burgund {
+	height: 9px;
+	width: 9px;
+	background: #762E31;
+}
+
+.circle_violet {
+	background: #41479B;
+}
+
+.circle_blue {
+	height: 9px;
+	width: 9px;
+	background: #257DA9;
 }
 
 .product__line {
@@ -276,11 +337,48 @@ body {
 		}
 
 	.main {
-		min-height: 253px;
+		height: 253px;
+	}
+}
+
+@media all and (max-width: 1120px) {
+	.nav__link {
+		margin-left: 2vw;
 	}
 
-	.member__link {
+	.form {
+		margin-left: 7vw;
+	}
+}
 
+@media all and (max-width: 900px) {
+	.nav__link {
+		margin-left: 1vw;
+	}
+
+	.form {
+		margin-left: 6vw;
+	}
+
+	.main__subtitle {
+		width: 12vw;
+	}
+
+	.product__block_tablet {
+		display: none;
+	}
+
+	.product__line {
+		display: none;
+	}
+
+	.product__cards {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.price {
+		max-width: 280px;
 	}
 }
 
@@ -307,7 +405,7 @@ body {
 	}
 
 	.nav {
-	display: none;
+		display: none;
 	}
 
 	.member {
@@ -384,8 +482,7 @@ body {
 }
 
 	.product {
-		min-width: 768px;
-		margin: 0 70px 0;
+		min-width: 100%;
 	}
 
 	.product__title {
@@ -393,14 +490,9 @@ body {
 		line-height: 29px;
 	}
 
-	.product__cards {
-		margin-left: 100px;
-		min-width: 627px;
-	}
-
 	.product__block {
-		width: 352px;
-		height: 280px;
+		width: 280px;
+		height: 352px;
 	}
 
 	.product__block img{
@@ -413,43 +505,54 @@ body {
 		line-height: 19px;
 	}
 
-	.price {
+	.price__title {
 		font-size: 25px;
 		line-height: 24px;
 	}
 
-	.product__block_tablet {
-		display: none;
+	.price__circles {
+		width: 95px;
+		height: 20px;
 	}
 
-	.product__line {
-		display: none;
+	.circle {
+		width: 20px;
+		height: 20px;
 	}
+
 	.stories-card_tablet {
 		display: none;
 	}
 }
 
-@media all and (max-width: 375px) {
-		.header {
-		margin: 0 5.6vw 0;
-		height: 72px;
+@media all and (max-width: 570px) {
+	.main__title {
+		margin-left: 35vw;
+}
+	.main__subtitle {
+		margin-left: 35vw;
+		width: 38vw;
 	}
-		.logo {
+	.product__block_mobile {
+		display: none;
+	}
+}
+
+@media all and (max-width: 375px) {
+	.header {
+		margin: 0 5.6vw 0;
+		min-height: 72px;
+	}
+	.logo {
 		margin-top: 24px;
 		height: 22px;
 		width: 104px;
 		background: url(../images/Axion-logo-1.svg) no-repeat 100%;
 		background-size: cover;
 	}
-		.main {
-		width: 706px;
-		height: 191px;
-		margin-left: -64px;
-	}
 
-		.menu__button {
-		right: 10vw;
+	.menu__button {
+		right: 12.5vw;
 		margin-top: 28px;
 		width: 41px;
 		height: 15px;
@@ -467,4 +570,43 @@ body {
 		top: 10px;
 	}
 
+	.main {
+		margin: 0;
+		margin-left: -64px;
+		width: 706px;
+		height: 191px;
+	}
+
+	.main__title {
+		margin-left: 30vw;
+		width: 206px;
+		height: 67px;
+		font-size: 20px;
+		line-height: 19px;
+}
+
+	.main__subtitle {
+		margin-top: 20px;
+		margin-left: 30vw;
+		width: 33vw;
+}
+
+	.subtitle-text {
+		font-size: 12px;
+		line-height: 11px;
+}
+
+	.subtitle-link {
+		padding-left: 2vw;
+		transform: scaleX(2.5);
+	}
+	.product__title {
+		font-size: 20px;
+		line-height: 19px;
+	}
+
+	.name {
+		font-size: 15px;
+		line-height: 14px;
+	}
 }
