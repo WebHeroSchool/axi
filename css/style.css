@@ -4,6 +4,7 @@
 	flex-direction: column;
 	min-width: 320px;
 	margin: 32.46px 6vw 0 6vw;
+	width: 88vw;
 }
 .header {
 	display: flex;
@@ -103,9 +104,8 @@
 }
 
 .main {
-	height: 280px;
+	min-height: 280px;
 	background: url(../images/rob-potter-422534-unsplash.svg) 100%;
-	width: 87.2vw;
 	background-size: cover;
 	margin-top: 29px;
 	display: flex;
@@ -114,7 +114,7 @@
 }
 
 .main__title {
-	margin-left: 5.8vw;
+	margin-left: 5.3vw;
 	font-family: Gotham Pro;
 	width: 195px;
 	height: 86.94px;
@@ -125,7 +125,7 @@
 }
 
 .main__subtitle {
-	margin-left: 5.8vw;
+	margin-left: 5.3vw;
 	display: flex;
 	align-items: center;
 	width: 11.7vw;
@@ -149,8 +149,8 @@
 }
 
 .product {
-	margin-top: 50px;
-	max-width: 88vw;
+	margin-top: 34px;
+	max-width: 87.2vw;
 }
 
 .product__title {
@@ -167,9 +167,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-left: 12px;
+}
+
+.product__block {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .name {
+	margin-top: 30px;
 	font-family: 'Gotham Pro';
 	font-size: 12px;
 	line-height: 11px;
@@ -179,9 +187,9 @@
 
 .price {
 	display: flex;
-	align-items: flex-start;
 	justify-content: space-between;
-	min-width: 19.7vw;
+	min-width: 18vw;
+	margin-top: -5px;
 }
 
 .price__title {
@@ -195,7 +203,7 @@
 
 .price__circles {
 	display: flex;
-	width: 49px;
+	width: 60px;
 	height: 10px;
 	justify-content: space-around;
 	align-items: center;
@@ -247,10 +255,11 @@
 .product__line {
 	display: flex;
 	justify-content: space-between;
+	margin-top: -38px;
 	width: 0px;
 	height: 100.18px;
 	opacity: 0.2;
-	border: 1px solid #000;
+	border: .1px solid #000;
 }
 
 .black {
@@ -579,6 +588,14 @@
 	.circle {
 		width: 20px;
 		height: 20px;
+	}
+
+	.circle_red_order {
+		order: -2;
+	}
+
+	.circle_yellow_order {
+		order: 1;
 	}
 
 	.black {
