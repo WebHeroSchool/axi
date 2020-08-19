@@ -105,7 +105,7 @@
 .main {
 	height: 280px;
 	background: url(../images/rob-potter-422534-unsplash.svg) 100%;
-	width: 88vw;
+	width: 87.2vw;
 	background-size: cover;
 	margin-top: 29px;
 	display: flex;
@@ -256,8 +256,21 @@
 .black {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	background-color: #000;
 	height: 494px;
+	margin-top: 52px;
+	max-width: 88vw;
+}
+
+.black__block {
+	display: flex;
+	flex-direction: column;
+}
+
+.black__img {
+	width: 54vw;
+	height: 345px;
 }
 
 .title {
@@ -270,6 +283,8 @@
 
 .title_black {
 	color: #fff;
+	max-width: 248px;
+	text-align: justify;
 }
 
 .paragraph_black {
@@ -279,6 +294,32 @@
 	font-weight: 500;
 	font-style: normal;
 	color: #fff;
+	max-width: 248px;
+}
+
+.learnmore {
+	display: flex;
+	text-decoration: none;
+	font-family: Gotham Pro;
+	font-size: 12px;
+	line-height: 11px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.learnmore_black {
+	color: #fff;
+}
+
+.arrow {
+	padding-left: 0.61vw;
+	text-decoration: none;
+	color:#fff;
+	transform: scaleX(2.5);
+}
+
+.stories {
+	margin-top: 80px;
 }
 
 .stories__block {
@@ -349,6 +390,16 @@
 	.form {
 		margin-left: 7vw;
 	}
+
+	.black__img {
+	width: 50vw;
+	height: 309px;
+	}
+
+	.image {
+	width: 50vw;
+	height: 309px;
+	}
 }
 
 @media all and (max-width: 900px) {
@@ -379,6 +430,16 @@
 
 	.price {
 		max-width: 280px;
+	}
+
+	.black__img {
+	width: 50vw;
+	height: 280px;
+	}
+
+	.image {
+	width: 50vw;
+	height: 280px;
 	}
 }
 
@@ -520,6 +581,38 @@
 		height: 20px;
 	}
 
+	.black {
+		flex-direction: column-reverse;
+	}
+
+	.black__block {
+		max-width: 682px;
+	}
+
+	.title_black {
+		text-align: center;
+		max-width: 581px;
+	}
+
+	.paragraph_black{
+		text-align: center;
+		max-width: 682px;
+	}
+
+	.learnmore {
+		display: none;
+	}
+
+	.black__img {
+		width: 89vw;
+		height: 373px;
+	}
+
+	.image {
+		width: 89vw;
+		height: 373px;
+	}
+
 	.stories-card_tablet {
 		display: none;
 	}
@@ -535,6 +628,16 @@
 	}
 	.product__block_mobile {
 		display: none;
+	}
+
+	.black__img {
+		width: 85vw;
+		height: 300px;
+	}
+
+	.image {
+		width: 85vw;
+		height: 300px;
 	}
 }
 
@@ -608,5 +711,15 @@
 	.name {
 		font-size: 15px;
 		line-height: 14px;
+	}
+
+	.black__img {
+		width: 276px;
+		height: 151px;
+	}
+
+	.image {
+		width: 276px;
+		height: 151px;
 	}
 }
