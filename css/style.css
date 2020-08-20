@@ -104,7 +104,7 @@
 }
 
 .main {
-	min-height: 280px;
+	height: 280px;
 	background: url(../images/rob-potter-422534-unsplash.svg) 100%;
 	background-size: cover;
 	margin-top: 29px;
@@ -453,12 +453,10 @@
 }
 
 @media all and (max-width: 768px) {
-	body {
-		width: 100%;
-	}
 
 	.container {
 		margin: 0;
+		width: 100vw;
 	}
 
 	.header {
@@ -600,6 +598,7 @@
 
 	.black {
 		flex-direction: column-reverse;
+		max-width: 100vw;
 	}
 
 	.black__block {
@@ -635,7 +634,7 @@
 	}
 }
 
-@media all and (max-width: 570px) {
+@media all and (max-width: 605px) {
 	.main__title {
 		margin-left: 35vw;
 }
@@ -659,6 +658,7 @@
 }
 
 @media all and (max-width: 375px) {
+
 	.header {
 		margin: 0 5.6vw 0;
 		min-height: 72px;
