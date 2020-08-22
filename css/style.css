@@ -42,7 +42,7 @@
 .form {
 	display: flex;
 	align-items: center;
-	margin-left: 13vw;
+	margin-left: 16vw;
 }
 
 .form__input {
@@ -64,8 +64,10 @@
 }
 
 .member {
+	margin-left: -1vw;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 .member__link {
 	text-transform: uppercase;
@@ -114,7 +116,7 @@
 }
 
 .main__title {
-	margin-left: 5.3vw;
+	margin: 15px 0 0 5.3vw;
 	font-family: Gotham Pro;
 	width: 195px;
 	height: 86.94px;
@@ -125,6 +127,7 @@
 }
 
 .main__subtitle {
+	margin-top: 15px;
 	margin-left: 5.3vw;
 	display: flex;
 	align-items: center;
@@ -142,10 +145,10 @@
 }
 
 .subtitle-link {
-	padding-left: 0.61vw;
+	padding-left: 1vw;
 	text-decoration: none;
 	color: #fff;
-	transform: scaleX(2.5);
+	transform: scaleX(2.7);
 }
 
 .product {
@@ -430,10 +433,6 @@
 	.logo {
 		min-width: 61.03px;
 		}
-
-	.main {
-		height: 253px;
-	}
 }
 
 @media all and (max-width: 1120px) {
