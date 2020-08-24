@@ -53,10 +53,10 @@
 
 .form__button {
 	border: none;
-	background-color: #fff;
 	border-bottom: 1px solid;
+	background-color: #fff;
 	max-height: 18.333px;
-	margin-left: -4%;
+	margin-left: -2vw;
 }
 
 .form__button:hover {
@@ -142,13 +142,15 @@
 	line-height: 11px;
 	text-decoration: none;
 	text-transform: uppercase;
+	min-width: 72px;
 }
 
-.subtitle-link {
-	padding-left: 1vw;
-	text-decoration: none;
-	color: #fff;
-	transform: scaleX(2.7);
+.subtitle-link{
+	margin: 3px;
+	min-width: 43px;
+	height: 8px;
+	background: url(../images/Arrow.png) no-repeat 100%;
+	background-size: cover;
 }
 
 .product {
@@ -558,14 +560,15 @@
 	}
 	.main {
 		margin-top: 0;
-		width: 1526px;
+		width: 100vw;
 		height: 415px;
-		margin-left: -127px;
+		background: url(../images/rob-potter-422534-unsplash.png) 100%;
+		background-size: cover;
 	}
 
 	.main__title {
 		margin: 0;
-		margin-left: 22vw;
+		margin-left: 6.8vw;
 		width: 355px;
 		height: 169px;
 		font-size: 50px;
@@ -574,7 +577,7 @@
 
 	.main__subtitle {
 		margin-top: 20px;
-		margin-left: 22vw;
+		margin-left: 6.8vw;
 		width: 26vw;
 		display: flex;
 		align-items: flex-end;
@@ -584,13 +587,12 @@
 		font-size: 20px;
 		line-height: 19px;
 		text-transform: uppercase;
+		min-width: 120px;
 }
 
 	.subtitle-link {
-		padding-left: 2vw;
-		text-decoration: none;
-		color: #fff;
-		transform: scaleX(5);
+		min-width: 72px;
+		height: 12px;
 }
 
 	.product {
@@ -679,13 +681,10 @@
 }
 
 @media all and (max-width: 605px) {
-	.main__title {
-		margin-left: 35vw;
-}
-	.main__subtitle {
-		margin-left: 35vw;
-		width: 38vw;
+	.subtitle-text {
+		min-width: 120px;
 	}
+
 	.product__block_mobile {
 		display: none;
 	}
@@ -736,13 +735,11 @@
 
 	.main {
 		margin: 0;
-		margin-left: -64px;
-		width: 706px;
+		width: 100vw;
 		height: 191px;
 	}
 
 	.main__title {
-		margin-left: 30vw;
 		width: 206px;
 		height: 67px;
 		font-size: 20px;
@@ -750,20 +747,20 @@
 }
 
 	.main__subtitle {
-		margin-top: 20px;
-		margin-left: 30vw;
 		width: 33vw;
 }
 
 	.subtitle-text {
+		min-width: 80px;
 		font-size: 12px;
 		line-height: 11px;
 }
 
 	.subtitle-link {
-		padding-left: 2vw;
-		transform: scaleX(2.5);
+		min-width: 45px;
+		height: 8px;
 	}
+
 	.product__title {
 		font-size: 20px;
 		line-height: 19px;
