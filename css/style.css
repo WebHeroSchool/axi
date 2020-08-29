@@ -847,8 +847,25 @@
 		font-weight: 300;
 	}
 
+	.ref {
+		margin-top: 15px;
+	}
+
+	.ref__text {
+		font-size: 20px;
+		line-height: 19px;
+	}
+
 	.ref__arrow {
 		background: url(../images/Arrow.png) no-repeat 100%;
+		width: 46px;
+		height: 15px;
+		background-size: cover;
+	}
+
+	.date {
+		font-size: 15px;
+		line-height: 14px;
 	}
 
 	.stories-card_tablet {
@@ -856,7 +873,7 @@
 	}
 
 	.gallery {
-		margin: 0 5.7vw 0;
+		margin: 52px 5.7vw 0;
 	}
 
 	.gallery__paragraph {
@@ -879,7 +896,59 @@
 	}
 
 	.footer {
-		height: 100%;
+		height: 304px;
+	}
+
+	.navigation {
+		margin-top: 50px; 
+		margin-left: 6.5vw;
+	}
+
+	.navigation_margin {
+		margin-left: 7.5vw;
+	}
+
+	.navigation_margin2 {
+		margin-left: 8.5vw;
+	}
+
+	.link {
+		font-size: 12px;
+		line-height: 11px;
+		margin-top: 8px;
+	}
+
+	.link_big {
+		margin-bottom: 0;
+	}
+
+	.signup {
+		margin-top: 50px;
+		margin-left: 9vw;
+	}
+
+	.signup__btn {
+		margin: 13px 0 0 0;
+		width: 143px;
+		height: 25px;
+	}
+
+	.link_margin {
+		margin-top: 5px;
+		width: 155px;
+		text-align: justify;
+	}
+
+	.signup__social {
+		margin-top: 30px;
+	}
+
+	.signup__social img {
+		width: 118px;
+		height: 16px;
+	}
+	.footer__copywrite {
+		margin-top: 75px;
 	}
 }
 
