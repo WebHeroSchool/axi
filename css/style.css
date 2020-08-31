@@ -5,7 +5,9 @@
 	min-width: 320px;
 	margin: 32.46px 6vw 0 6vw;
 	width: 88vw;
+	overflow-x: hidden;
 }
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -280,6 +282,10 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: -20px;
+}
+
+.black__figure {
+	display: none;
 }
 
 .black__img {
@@ -598,6 +604,7 @@
 		width: 100vw;
 	}
 
+
 	.header {
 		margin: 0 5.6vw 0;
 		min-height: 113px;
@@ -766,22 +773,20 @@
 	.black {
 		flex-direction: column-reverse;
 		min-width: 100vw;
-		margin-top: 110px;
+		margin-top: 130px;
 	}
 
-	.black::before {
-		content: '';
+	.black__figure {
+		display: block;
 		position: absolute;
-		width: 200vw;
+		width: 150vw;
 		height: 1575px;
 		top: 1025px;
 		left: -50%;
-		z-index: -1;
-		background: #000;
-		transform: rotate(2.6deg);
+		z-index: -2;
 	}
 
-	.black__block {
+	.black__blocking {
 		max-width: 682px;
 	}
 
@@ -842,6 +847,7 @@
 	}
 
 	.stories-card__paragraph {
+		width: 310px;
 		font-size: 20px;
 		line-height: 25px;
 		font-weight: 300;
@@ -864,8 +870,11 @@
 	}
 
 	.date {
+		margin-top: 15px;
 		font-size: 15px;
 		line-height: 14px;
+		opacity: 1;
+
 	}
 
 	.stories-card_tablet {
@@ -881,7 +890,7 @@
 		opacity: 1;
 		font-size: 30px;
 		line-height: 29px;
-		width: 92vw;
+		width: 88vw;
 	}
 
 	.gallery__images {
@@ -984,9 +993,11 @@
 		width: 104px;
 		background: url(../images/Axion-logo-1.svg) no-repeat 100%;
 		background-size: cover;
+		margin-left: 29px;
 	}
 
 	.menu__button {
+		position: absolute;
 		right: 12.5vw;
 		margin-top: 28px;
 		width: 41px;
@@ -1009,9 +1020,12 @@
 		margin: 0;
 		width: 100vw;
 		height: 191px;
+		background: url(../images/rob-potter-mob.jpg) 100%;
+		background-size: cover;
 	}
 
 	.main__title {
+		margin: 25px 0 0 50px;
 		width: 206px;
 		height: 67px;
 		font-size: 20px;
@@ -1019,6 +1033,7 @@
 }
 
 	.main__subtitle {
+		margin: 8px 0 0 50px;
 		width: 33vw;
 }
 
@@ -1029,18 +1044,75 @@
 }
 
 	.subtitle-link {
+		margin: 0;
 		min-width: 45px;
 		height: 8px;
 	}
 
 	.product__title {
+		margin: 0;
+		height: 50px;
+		width: 100vw;
 		font-size: 20px;
 		line-height: 19px;
 	}
 
+	.product__cards {
+		margin: 0;
+		margin-top: -22px;
+		width: 100vw;
+		justify-content: center;
+	}
+
+	.product__block {
+		width: 281px;
+		height: 248px;
+		margin-left: 10px;
+	}
+
+	.product__block img {
+		width: 162px;
+		min-height: 165px;
+		z-index: -1;
+	}
+
 	.name {
+		margin: 22px 0 13px 0;
 		font-size: 15px;
 		line-height: 14px;
+		width: 255px;
+	}
+
+	.price {
+		width: 272px;
+	}
+
+	.price__title {
+		margin-left: 7px;
+	}
+
+	.price__circles {
+		width: 75px;
+		justify-content: space-between;
+	}
+
+	.circle {
+		width: 15px;
+		height: 15px;
+	}
+
+	.price__title {
+		font-size: 20px;
+		line-height: 19px;
+	}
+
+	.black {
+		height: 280px;
+	}
+
+	.black__figure {
+		top: 400px;
+		z-index: -3;
 	}
 
 	.black__img {
@@ -1049,7 +1121,200 @@
 	}
 
 	.image {
-		width: 276px;
-		height: 151px;
+		width: 285px;
+		height: 160px;
+	}
+
+	.black__block {
+		display: flex;
+		align-items: center;
+	}
+
+	.title_black {
+		display: flex;
+		text-align: center;
+		width: 250px;
+		height: 56px;
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.paragraph_black {
+		margin: 10px 0 35px 0;
+		width: 279px;
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.title_stories {
+		font-size: 20px;
+		line-height: 19px;
+	}
+
+	.stories-card_mobile {
+		display: none;
+	}
+
+	.stories-card {
+		width: 100vw;
+		text-align: center;
+	}
+
+	.stories-card img {
+		height: 148px;
+		width: 279px;
+	}
+
+	.stories-card__heading {
+		font-size: 20px;
+		line-height: 19px;
+		width: 279px;
+		margin: 20px auto 0;
+	}
+
+	.stories-card__paragraph {
+		font-size: 14px;
+		line-height: 17px;
+		width: 279px;
+		margin: 10px auto 0;
+		text-align: left;
+	}
+
+	.stories-card__postparagraph {
+		margin: auto;
+		width: 279px;
+	}
+
+	.ref__text {
+		font-size: 12px;
+		line-height: 11px;
+	}
+
+	.date {
+		font-size: 15px;
+		line-height: 14px;
+	}
+
+	.gallery {
+		margin: 0;
+	}
+
+	.gallery__paragraph {
+		font-size: 25px;
+		line-height: 24px;
+		text-align: center;
+		width: 100vw;
+	}
+
+	.gallery__images {
+		justify-content: center;
+		width: 100vw;
+	}
+
+	.gallery-image_hidden {
+		display: none;
+	}
+
+	.gallery-image {
+		height: 140px;
+		min-width: 140px;
+	}
+
+	.gallery-image_order2 {
+		order: 1;
+	}
+
+	.gallery-image_order {
+		order: 2;
+	}
+
+	.footer {
+		height: 100%;
+	}
+
+	.footer__block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navigation {
+		margin-top: 25px;
+		margin-left: 0;
+		order: -2;
+	}
+
+	.navigation_margin {
+		margin-top: 40px;
+		order: 2;
+	}
+
+	.navigation_margin2 {
+		margin-top: 40px;
+		order: 1;
+	}
+
+	.navigation_margin2 .link {
+		margin-top: 6px;
+	}
+
+	.navigation_margin .link {
+		margin-top: 6px;
+	}
+
+	.signup {
+		margin: 0;
+		margin-top: 30px;
+		order: 3;
+	}
+
+	.link {
+		margin-top: 10px;
+		margin-left: 0;
+		font-size: 15px;
+		line-height: 14px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.link_big {
+		font-size: 15px;
+		line-height: 14px;
+		font-weight: bold;
+	}
+
+	.link_margin {
+		width: 167px;
+	}
+
+	.signup {
+		margin-top: 40px;
+		width: 100vw;
+		align-items: center;
+	}
+
+	.signup__social {
+		margin-top: 100px;
+	}
+
+	.signup__social img{
+		width: 167px;
+		height: 23px;
+	}
+
+	.signup__btn {
+		margin-top: 26px;
+		width: 150px;
+		height: 37px;
+		font-size: 12px;
+		line-height: 11px;
+	}
+
+	.footer__copywrite {
+		text-align: center;
+		margin-top: 22px;
+		font-size: 13px;
+		line-height: 12px;
 	}
 }
