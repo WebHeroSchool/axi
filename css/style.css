@@ -1,5 +1,9 @@
+html {
+	overflow-x: hidden;
+}
+
 body {
-	width: 100vw;
+	margin: 0;
 }
 
 .container {
@@ -8,7 +12,6 @@ body {
 	flex-direction: column;
 	min-width: 320px;
 	margin: 32.46px 6vw 0 6vw;
-	width: 88vw;
 }
 
 .header {
@@ -268,7 +271,7 @@ body {
 	margin-top: -38px;
 	width: 0px;
 	height: 100.18px;
-	opacity: 0.2;
+	opacity: .2;
 	border: .1px solid #000;
 }
 
@@ -419,7 +422,7 @@ body {
 	font-size: 12px;
 	line-height: 11px;
 	font-weight: bold;
-	opacity: 0.3;
+	opacity: .3;
 }
 
 .gallery {
@@ -431,7 +434,7 @@ body {
 	text-align: right;
 	font-family: 'Gotham Pro';
 	font-size: 18px;
-	opacity: 0.3;
+	opacity: .3;
 	font-weight: bold;
 }
 
@@ -441,7 +444,7 @@ body {
 	width: 88vw;
 }
 
-.gallery__images:nth-child(8) {
+.gallery-image_hidden2 {
 	display: none;
 }
 
@@ -551,6 +554,11 @@ body {
 	.image {
 	width: 50vw;
 	height: 309px;
+	}
+
+	.gallery__images img {
+		width: 132px;
+		height: 132px;
 	}
 }
 
@@ -675,7 +683,7 @@ body {
 		height: 169px;
 		font-size: 50px;
 		line-height: 48px;
-}
+	}
 
 	.main__subtitle {
 		margin-top: 20px;
@@ -683,19 +691,19 @@ body {
 		width: 26vw;
 		display: flex;
 		align-items: flex-end;
-}
+	}
 
 	.subtitle-text {
 		font-size: 20px;
 		line-height: 19px;
 		text-transform: uppercase;
 		min-width: 120px;
-}
+	}
 
 	.subtitle-link {
 		min-width: 72px;
 		height: 12px;
-}
+	}
 
 	.product {
 		min-width: 100%;
@@ -1033,18 +1041,18 @@ body {
 		height: 67px;
 		font-size: 20px;
 		line-height: 19px;
-}
+	}
 
 	.main__subtitle {
 		margin: 8px 0 0 50px;
 		width: 33vw;
-}
+	}
 
 	.subtitle-text {
 		min-width: 80px;
 		font-size: 12px;
 		line-height: 11px;
-}
+	}
 
 	.subtitle-link {
 		margin: 0;
