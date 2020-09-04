@@ -1,7 +1,3 @@
-html {
-	overflow-x: hidden;
-}
-
 body {
 	margin: 0;
 }
@@ -457,12 +453,13 @@ body {
 	margin: 80px 0 0 0;
 	height: 296px;
 	background-color: #000;
-	width: 100vw;
+	width: 100%;
 }
 
 .footer__block {
 	display: flex;
 }
+
 .navigation {
 	margin-top: 60px;
 	margin-left: 17vw;
@@ -523,7 +520,7 @@ body {
 .footer__copywrite {
 	display: block;
 	color: #fff;
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 	font-family: 'Gotham Pro';
 	font-size: 12px;
@@ -617,10 +614,19 @@ body {
 	width: 50vw;
 	height: 280px;
 	}
+
+	.stories-card_tablet {
+		display: none;
+	}
+
+	.gallery__images {
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 680px;
+	}
 }
 
 @media all and (max-width: 768px) {
-
 	body {
 		margin: 0;
 		width: 100vw;
@@ -659,7 +665,8 @@ body {
 
 	.menu__button {
 		display: block;
-		right: 10vw;
+		position: absolute;
+		right: 6vw;
 		margin-top: 45px;
 		width: 60px;
 		height: 25px;
@@ -685,6 +692,7 @@ body {
 	.language {
 		display: none;
 	}
+
 	.main {
 		margin-top: 0;
 		width: 100vw;
@@ -860,6 +868,7 @@ body {
 	}
 
 	.stories-card {
+		width: 312px; 
 		color: #fff;
 	}
 
@@ -869,6 +878,8 @@ body {
 	}
 
 	.stories-card__heading {
+		text-align: left;
+		width: 302px;
 		font-size: 25px;
 		line-height: 24px;
 	}
@@ -904,12 +915,8 @@ body {
 
 	}
 
-	.stories-card_tablet {
-		display: none;
-	}
-
 	.gallery {
-		margin: 52px 5.7vw 0;
+		margin: 75px 5.7vw 0;
 	}
 
 	.gallery__paragraph {
@@ -920,18 +927,17 @@ body {
 		width: 88vw;
 	}
 
-	.gallery__images {
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 680px;
-	}
-
-	.gallery-image {
+	.gallery__images img {
 		min-width: 170px;
 		height: 170px;
 	}
 
+	.gallery-image_hidden2 {
+	display: block;
+	}
+
 	.footer {
+		margin-top: 120px;
 		height: 304px;
 	}
 
@@ -983,6 +989,7 @@ body {
 		width: 118px;
 		height: 16px;
 	}
+
 	.footer__copywrite {
 		margin-top: 75px;
 	}
@@ -1008,12 +1015,12 @@ body {
 	}
 }
 
-@media all and (max-width: 375px) {
-
+@media all and (max-width: 700px) {
 	.header {
 		margin: 0 5.6vw 0;
 		min-height: 72px;
 	}
+
 	.logo {
 		margin-top: 24px;
 		height: 22px;
@@ -1134,11 +1141,11 @@ body {
 	}
 
 	.black {
-		height: 280px;
+		height: 300px;
 	}
 
 	.black__figure {
-		top: 400px;
+		top: 410px;
 		z-index: -3;
 	}
 
@@ -1178,6 +1185,11 @@ body {
 	.title_stories {
 		font-size: 20px;
 		line-height: 19px;
+		height: 45px;
+	}
+
+	.stories__block {
+		margin-top: 0;
 	}
 
 	.stories-card_mobile {
@@ -1198,7 +1210,7 @@ body {
 		font-size: 20px;
 		line-height: 19px;
 		width: 279px;
-		margin: 20px auto 0;
+		margin: 25px auto 0;
 	}
 
 	.stories-card__paragraph {
@@ -1226,6 +1238,7 @@ body {
 
 	.gallery {
 		margin: 0;
+		margin-top: 70px;
 	}
 
 	.gallery__paragraph {
@@ -1244,7 +1257,7 @@ body {
 		display: none;
 	}
 
-	.gallery-image {
+	.gallery__images img{
 		height: 140px;
 		min-width: 140px;
 	}
@@ -1258,6 +1271,7 @@ body {
 	}
 
 	.footer {
+		margin-top: 85px;
 		height: 100%;
 	}
 
@@ -1344,4 +1358,12 @@ body {
 		font-size: 13px;
 		line-height: 12px;
 	}
+
+@media all and (min-width: 420px) {
+	.black__figure {
+		top: 520px;
+		z-index: -3;
+		}
+	}
+
 }
