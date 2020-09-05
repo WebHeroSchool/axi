@@ -503,7 +503,7 @@ body {
 
 .signup__btn {
 	margin: 13px 0 0 0;
-	width: 11.63vw;
+	width: 136px;
 	height: 29px;
 	background: #000;
 	color: #fff;
@@ -560,6 +560,122 @@ body {
 }
 
 @media all and (max-width: 1024px) {
+	.container {
+		margin: 32.46px 47px 0;
+		width: 90.81vw;
+	}
+
+	.header {
+		justify-content: space-between;
+	}
+
+	.nav {
+		width: 330px;
+	}
+
+	.nav__link {
+		margin: 0;
+	}
+
+	.form {
+		margin-left: 11vw;
+	}
+
+	.form__input {
+		max-width: 14vw;
+	}
+
+	.form__button {
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.form__button img {
+		width: 12.2px;
+		height: 14px;
+	}
+
+	.member__link {
+		margin-left: 2.4vw;
+	}
+
+	.language {
+		margin-left: 0;
+	}
+
+	.main {
+		margin-top: 40px;
+		height: 252px;
+	}
+
+	.main__title {
+		margin-top: 0;
+	}
+
+	.main__subtitle {
+		margin-top: 10px;
+	}
+
+	.product {
+		margin-top: 45px;
+		max-width: 90.81vw;
+	}
+
+	.product__cards {
+		margin: 0;
+	}
+
+	.product__block {
+		width: 208px;
+		height: 261px;
+	}
+
+	.product__block img {
+		margin: 0 19px 0;
+		width: 170px;
+	}
+
+	.name {
+		margin-left: 10px;
+	}
+
+	.price {
+		margin: 0 5px 0 10px;
+	}
+
+	.black {
+		max-width: 90.81vw;
+		height: 442px;
+	}
+
+	.black__img {
+		margin: -15px 0 0 30px;
+	}
+
+	.image {
+		width: 580px;
+		height: 320px;
+	}
+
+	.black__block {
+		margin-left: 105px;
+	}
+
+	.paragraph_black {
+		width: 248px;
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	.learnmore {
+		margin-top: 5px;
+	}
+
+	.stories {
+		margin-top: 90px;
+	}
+
 	.stories-card {
 		width: 277px;
 	}
@@ -573,9 +689,50 @@ body {
 		font-size: 13px;
 		line-height: 16px;
 	}
+
+	.ref {
+		margin-top: 10px;
+	}
+
+	.ref__arrow {
+		margin: 0;
+	}
+
+	.date {
+		margin-top: 10px;
+	}
+
+	.gallery {
+		margin-top: 55px;
+	}
+
+	.gallery__images img {
+		width: 132px;
+		height: 132px;
+	}
+
+	.footer {
+		margin-top: 95px;
+	}
+
+	.navigation {
+		margin-left: 12.5vw;
+	}
+
+	.navigation_margin {
+		margin-left: 8.5vw;
+	}
+
+	.navigation_margin2 {
+		margin-left: 7vw;
+	}
+
+	.signup {
+		margin-left: 8vw;
+	}
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 950px) {
 	.nav__link {
 		margin-left: 1vw;
 	}
