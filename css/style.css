@@ -762,6 +762,10 @@ body {
 		max-width: 280px;
 	}
 
+	.black__block {
+		margin-left: 20px;
+	}
+
 	.black__img {
 	width: 50vw;
 	height: 280px;
