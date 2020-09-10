@@ -401,6 +401,7 @@ body {
 .ref {
 	display: flex;
 	align-items: center;
+	margin-top: 5px;
 }
 
 .ref__text {
@@ -637,7 +638,7 @@ body {
 	}
 
 	.product__title {
-		width: 930px;
+		width: auto;
 	}
 
 	.product__cards {
@@ -830,6 +831,8 @@ body {
 
 	.container {
 		margin: 0;
+		width: 100vw;
+		overflow: hidden;
 	}
 
 	.header {
@@ -1006,16 +1009,10 @@ body {
 		flex-direction: column-reverse;
 		min-width: 100vw;
 		height: 590px;
-	}
-
-	.black__figure {
-		display: block;
-		position: absolute;
-		width: 150vw;
-		height: 1650px;
-		top: 985px;
-		left: -50%;
-		z-index: -2;
+		background: linear-gradient(2.6deg, #000 92.7%, #fff 93%);
+    	padding-bottom: 110px;
+    	padding-top: 100px;
+    	margin-bottom: 0;
 	}
 
 	.black__block {
@@ -1055,7 +1052,10 @@ body {
 	}
 
 	.stories {
-		margin-top: 85px;
+		margin: 0;
+		width: 100vw;
+		padding-top: 85px;
+		background-color: #000;
 	}
 
 	.title_stories {
@@ -1068,7 +1068,8 @@ body {
 
 	.stories__block {
 		margin-top: 8px;
-		max-width: 375px;
+		max-width: 768px;
+		justify-content: space-around;
 	}
 
 	.stories-card {
@@ -1129,7 +1130,12 @@ body {
 	}
 
 	.gallery {
-		margin: 75px 5.7vw 0;
+		padding-top: 75px;
+		padding-bottom: 125px;
+		margin-top: 0;
+		background-color: #000;
+		width: 100vw;
+		background: linear-gradient(2.6deg, #fff 54.5%, #000 55%);
 	}
 
 	.gallery__paragraph {
@@ -1139,6 +1145,10 @@ body {
 		font-size: 30px;
 		line-height: 29px;
 		width: 680px;
+	}
+
+	.gallery__images {
+		margin: auto;
 	}
 
 	.gallery__images img {
@@ -1151,7 +1161,7 @@ body {
 	}
 
 	.footer {
-		margin-top: 125px;
+		margin-top: 0;
 		height: 304px;
 	}
 
@@ -1358,12 +1368,6 @@ body {
 	.black {
 		margin-top: 125px;
 		height: 305px;
-	}
-
-	.black__figure {
-		height: 1830px;
-		top: 280px;
-		z-index: -2;
 	}
 
 	.black__img {
@@ -1616,10 +1620,4 @@ body {
 	.main__subtitle {
 		margin-left: 20px;
 	} 
-
-	.black__figure {
-		height: 1252px;
-		top: 485px;
-		z-index: -1;
-}
 }
