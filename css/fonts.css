@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Gotham Pro';
 	src: url('GothamPro/GothamPro-Medium.woff') format("woff"), 
-			url('GothamPro/GothamPro-Medium.woff2') format("woff2");
+		url('GothamPro/GothamPro-Medium.woff2') format("woff2");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
 	font-family: 'Gotham Pro';
 	src: url('GothamPro/GothamPro-Bold.woff') format("woff"), 
-			url('GothamPro-Bold.woff2') format("woff2");
+		url('GothamPro-Bold.woff2') format("woff2");
 	font-style: normal;
 	font-weight: bold;
 }
@@ -17,7 +17,7 @@
 @font-face {
 	font-family: 'Gotham Pro';
 		src: url('GothamPro/GothamPro-Light.woff') format("woff"), 
-				url('GothamPro-Light.woff2') format("woff2");
+			url('GothamPro-Light.woff2') format("woff2");
 	font-style: normal;
 	font-weight: 300;
 }
