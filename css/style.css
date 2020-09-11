@@ -289,10 +289,6 @@ body {
 	margin-top: -17px;
 }
 
-.black__figure {
-	display: none;
-}
-
 .black__img {
 	margin: -15px 4.6vw 0 3vw;
 	width: 54vw;
@@ -564,7 +560,7 @@ body {
 @media all and (max-width: 1024px) {
 	.container {
 		margin: 32.46px 47px 0;
-		width: 90.81vw;
+		width: 90.81%;
 	}
 
 	.header {
@@ -634,7 +630,6 @@ body {
 
 	.product {
 		margin-top: 45px;
-		max-width: 90.81vw;
 	}
 
 	.product__title {
@@ -657,7 +652,7 @@ body {
 	}
 
 	.name {
-		margin: 35px 0 8px 10px;
+		margin: 35px 0 10px 10px;
 	}
 
 	.price {
@@ -666,8 +661,8 @@ body {
 
 	.black {
 		margin-top: 43px;
-		max-width: 90.81vw;
 		height: 442px;
+		max-width: 100%;
 	}
 
 	.black__img {
@@ -703,6 +698,10 @@ body {
 		margin-top: 90px;
 	}
 
+	.stories__block {
+		margin-top: 0;
+	}
+
 	.title_stories {
 		height: 67px;
 	}
@@ -735,7 +734,7 @@ body {
 	}
 
 	.gallery {
-		margin-top: 55px;
+		margin-top: 60px;
 	}
 
 	.gallery__images {
@@ -807,11 +806,6 @@ body {
 	height: 280px;
 	}
 
-	.image {
-	width: 50vw;
-	height: 280px;
-	}
-
 	.stories-card_tablet {
 		display: none;
 	}
@@ -824,19 +818,13 @@ body {
 }
 
 @media all and (max-width: 768px) {
-	body {
-		margin: 0;
-		width: 100vw;
-	}
-
 	.container {
 		margin: 0;
 		width: 100vw;
-		overflow: hidden;
 	}
 
 	.header {
-		margin: 0 5.6vw 0;
+		margin: 0 5.6% 0;
 		min-height: 113px;
 		justify-content: space-between;
 	}
@@ -864,7 +852,7 @@ body {
 	.menu__button {
 		display: block;
 		position: absolute;
-		right: 5.7vw;
+		right: 5.7%;
 		margin-top: 45px;
 		width: 60px;
 		height: 25px;
@@ -893,7 +881,7 @@ body {
 
 	.main {
 		margin-top: 0;
-		width: 100vw;
+		width: 100%;
 		height: 415px;
 		background: url(../images/rob-potter-422534-unsplash.png) 100%;
 		background-size: cover;
@@ -935,7 +923,7 @@ body {
 
 	.product__title {
 		margin-left: 37px;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		font-size: 30px;
 		line-height: 29px;
 		height: 65px;
@@ -946,11 +934,12 @@ body {
 
 	.product__cards {
 		margin: auto;
-		width: 700px;
-		justify-content: space-around;
+		width: 95%;
+		justify-content: center;
 	}
 
 	.product__block {
+		padding: 0 35px 0;
 		width: 280px;
 		height: 352px;
 		align-items: center;
@@ -963,23 +952,26 @@ body {
 	}
 
 	.name {
-		width: 250px;
-		margin-top: 20px;
+		width: 251px;
+		margin-top: 25px;
+		margin-left: 0;
 		font-size: 20px;
 		line-height: 19px;
 	}
 
 	.price {
 		width: 250px;
-		margin-top: 10px;
+		margin: 8px 0 0 0;
 	}
 
 	.product__block_mobile .name {
 		width: 265px;
+		margin-left: 15px;
 	}
 
 	.product__block_mobile .price {
 		width: 265px;
+		margin-left: 15px;
 	}
 
 	.price__title {
@@ -1007,12 +999,12 @@ body {
 
 	.black {
 		flex-direction: column-reverse;
-		min-width: 100vw;
-		height: 590px;
-		background: linear-gradient(2.6deg, #000 92.7%, #fff 93%);
-    	padding-bottom: 110px;
-    	padding-top: 100px;
-    	margin-bottom: 0;
+		min-width: 100%;
+		height: 100%;
+		background: linear-gradient(2.6deg, #000 92.2%, #fff 92.5%);
+    	padding-bottom: 0;
+    	padding-top: 75px;
+    	margin: 0;
 	}
 
 	.black__block {
@@ -1031,7 +1023,7 @@ body {
 		margin-top: 15px;
 		margin-bottom: 35px;
 		text-align: center;
-		min-width: 681px;
+		min-width: 683px;
 		font-size: 20px;
 		line-height: 25px;
 	}
@@ -1043,7 +1035,7 @@ body {
 	.black__img {
 		margin: 0;
 		width: 90vw;
-		height: 380px;
+		height: 390px;
 	}
 
 	.image {
@@ -1059,7 +1051,7 @@ body {
 	}
 
 	.title_stories {
-		margin-top: 30px;
+		margin-top: 15px;
 		color: #fff;
 		font-size: 30px;
 		line-height: 29px;
@@ -1069,10 +1061,11 @@ body {
 	.stories__block {
 		margin-top: 8px;
 		max-width: 768px;
-		justify-content: space-around;
+		justify-content: center;
 	}
 
 	.stories-card {
+		padding: 0 30px 0 30px;
 		width: 312px; 
 		color: #fff;
 	}
@@ -1134,7 +1127,7 @@ body {
 		padding-bottom: 125px;
 		margin-top: 0;
 		background-color: #000;
-		width: 100vw;
+		width: 100%;
 		background: linear-gradient(2.6deg, #fff 54.5%, #000 55%);
 	}
 
@@ -1144,7 +1137,7 @@ body {
 		opacity: 1;
 		font-size: 30px;
 		line-height: 29px;
-		width: 680px;
+		width: 94.5%;
 	}
 
 	.gallery__images {
@@ -1163,6 +1156,7 @@ body {
 	.footer {
 		margin-top: 0;
 		height: 304px;
+		width: 100vw;
 	}
 
 	.navigation {
@@ -1307,10 +1301,15 @@ body {
 		height: 8px;
 	}
 
+	.product {
+		margin-bottom: 40px;
+	}
+
 	.product__title {
 		margin: 0;
+		margin-left: -5px;
 		height: 50px;
-		width: 100vw;
+		width: 100%;
 		font-size: 20px;
 		line-height: 19px;
 	}
@@ -1366,13 +1365,14 @@ body {
 	}
 
 	.black {
-		margin-top: 125px;
-		height: 305px;
+		padding-top: 40px;
+		height: 100%;
 	}
 
 	.black__img {
 		width: 276px;
-		height: 151px;
+		height: 160px;
+		margin-top: -5px;
 	}
 
 	.image {
@@ -1405,7 +1405,7 @@ body {
 	}
 
 	.stories {
-		margin-top: 75px;
+		padding-top: 85px;
 	}
 
 	.title_stories {
@@ -1443,7 +1443,7 @@ body {
 		font-size: 14px;
 		line-height: 17px;
 		width: 279px;
-		margin: 10px auto 0;
+		margin: 11px auto 0;
 		text-align: left;
 	}
 
@@ -1468,20 +1468,22 @@ body {
 
 	.gallery {
 		margin: 0;
-		margin-top: 70px;
+		padding: 70px 0 85px;
+		background: linear-gradient(2.6deg, #fff 43%, #000 43.5%);
 	}
 
 	.gallery__paragraph {
 		font-size: 25px;
 		line-height: 24px;
 		text-align: center;
-		width: 100vw;
+		width: 100%;
 		margin-top: 20px;
+		margin-bottom: 10px;
 	}
 
 	.gallery__images {
 		justify-content: center;
-		width: 100vw;
+		width: 100%;
 	}
 
 	.gallery-image_hidden {
@@ -1502,7 +1504,6 @@ body {
 	}
 
 	.footer {
-		margin-top: 85px;
 		height: 100%;
 	}
 
@@ -1512,7 +1513,7 @@ body {
 	}
 
 	.navigation {
-		margin-top: 25px;
+		margin-top: 30px;
 		margin-left: 0;
 		order: -2;
 	}
@@ -1591,14 +1592,8 @@ body {
 		margin-top: 22px;
 		font-size: 13px;
 		line-height: 12px;
+		padding-bottom: 25px;
 	}
-
-@media all and (min-width: 420px) {
-	.black__figure {
-		top: 520px;
-		z-index: -3;
-	}
-}
 
 @media all and (max-width: 320px) {
 	.header {
@@ -1610,7 +1605,7 @@ body {
 	}
 
 	.menu__button {
-		right: 5vw;
+		right: 6%;
 	}
 
 	.main__title {
@@ -1620,4 +1615,13 @@ body {
 	.main__subtitle {
 		margin-left: 20px;
 	} 
+
+	.product__block {
+		padding: 0;
+		margin: 0;
+	}
+
+	.stories-card {
+		padding: 0;
+	}
 }
